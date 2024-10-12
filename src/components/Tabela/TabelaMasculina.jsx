@@ -17,7 +17,7 @@ const Masculina = ({ imc }) => {
         <ul className={styles.tabela}>
             <li>
                 <div className={`${styles.tabelaItem} ${categoria === 'magreza' ? styles.highlightCuidado : ''}`}>
-                    <img src="../src/assets/imc-m-1.png" alt="Magreza Masculina" />
+                    <img src="https://raw.githubusercontent.com/rafalves106/exercicio_imc/refs/heads/main/src/assets/imc-m-1.png" alt="Magreza Masculina" />
                     <h2>Abaixo de 18.5</h2>
                     <h1>Magreza</h1>
                     <h3>Grau 0 de Obesidade</h3>
@@ -26,7 +26,7 @@ const Masculina = ({ imc }) => {
             </li>
             <li>
                 <div className={`${styles.tabelaItem} ${categoria === 'normal' ? styles.highlight : ''}`}>
-                    <img src="../src/assets/imc-m-2.png" alt="Peso Normal Masculino" />
+                    <img src="https://raw.githubusercontent.com/rafalves106/exercicio_imc/refs/heads/main/src/assets/imc-m-2.png" alt="Peso Normal Masculino" />
                     <h2>Entre 18.5 e 24.9</h2>
                     <h1>Normal</h1>
                     <h3>Grau 0 de Obesidade</h3>
@@ -35,7 +35,7 @@ const Masculina = ({ imc }) => {
             </li>
             <li>
                 <div className={`${styles.tabelaItem} ${categoria === 'sobrepeso' ? styles.highlightCuidado : ''}`}>
-                    <img src="../src/assets/imc-m-3.png" alt="Sobrepeso Masculino" />
+                    <img src="https://raw.githubusercontent.com/rafalves106/exercicio_imc/refs/heads/main/src/assets/imc-m-3.png" alt="Sobrepeso Masculino" />
                     <h2>Entre 25.0 e 29.9</h2>
                     <h1>Sobrepeso</h1>
                     <h3>Grau 1 de Obesidade</h3>
@@ -44,7 +44,7 @@ const Masculina = ({ imc }) => {
             </li>
             <li>
                 <div className={`${styles.tabelaItem} ${categoria === 'obesidade' ? styles.highlightAlerta : ''}`}>
-                    <img src="../src/assets/imc-m-4.png" alt="Obesidade Masculina" />
+                    <img src="https://raw.githubusercontent.com/rafalves106/exercicio_imc/refs/heads/main/src/assets/imc-m-4.png" alt="Obesidade Masculina" />
                     <h2>Entre 30.0 e 39.9</h2>
                     <h1>Obesidade</h1>
                     <h3>Grau 2 de Obesidade</h3>
@@ -53,7 +53,7 @@ const Masculina = ({ imc }) => {
             </li>
             <li>
                 <div className={`${styles.tabelaItem} ${categoria === 'obesidadeGrave' ? styles.highlightGrave : ''}`}>
-                    <img src="../src/assets/imc-m-5.png" alt="Obesidade Grave Masculina" />
+                    <img src="https://raw.githubusercontent.com/rafalves106/exercicio_imc/refs/heads/main/src/assets/imc-m-5.png" alt="Obesidade Grave Masculina" />
                     <h2>Acima de 40.0</h2>
                     <h1>Obesidade II</h1>
                     <h3>Grau 3 de Obesidade</h3>
