@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 80px auto 46px;
+    font-family: 'Inter', sans-serif;
+}
+
+.titulo {
+    font-size: 22px;
+    background-color: #F4F4F4;
+    max-width: 278px;
+    text-align: center;
+    padding: 10px;
+    color: #5C5C5C;
+    font-weight: 400;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+.descricao {
+    font-size: 16px;
+    color: #333333;
+    padding: 0px 24px;
+}
+
+.descricaoDestaque {
+    font-size: 20px;
+}
+
+.descricaoImportante {
+    font-style: italic;
+    font-weight: 600;
+}
