@@ -6,7 +6,19 @@
 }
 
 :root {
+    --cor-de-fundo: #F4F4F4;
+
+    --cor-titulo: #5C5C5C;
+    --cor-descricao: #333333;
+    --cor-input: #7D7D7D;
+
+    --cor-normal: #DB9C94;
     --cor-cuidado: #FF8356;
     --cor-alerta: #FF5429;
     --cor-grave: #BD0000;
+
+    --cor-botao-calcular: #55B2EC;
+    --cor-botao-calcular-borda: #41A1DC;
+    --cor-botao-limpar: #FF8356;
+    --cor-botao-limpar-borda: #FF8356;
 }

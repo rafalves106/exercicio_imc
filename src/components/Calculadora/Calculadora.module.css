@@ -4,10 +4,9 @@
     margin: 0 auto;
     padding: 0px 24px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     align-items: end;
     gap: 22px;
-    font-family: 'Inter', sans-serif;
 }
 
 .calculadoraItem {
@@ -22,11 +21,11 @@
 }
 
 .calculadoraItem input, .calculadoraItem select {
-    background-color: #F4F4F4;
+    background-color: var(--cor-de-fundo);
     outline: none;
     border: none;
     border-radius: 7px;
-    color: #7D7D7D;
+    color: var(--cor-input);
     font-size: 14px;
 }
 
@@ -47,11 +46,11 @@
 }
 
 .calcular {
-    background-color: #55B2EC;
-    border: 1px solid #41A1DC;
+    background-color: var(--cor-botao-calcular);
+    border: 1px solid var(--cor-botao-calcular-borda);
 }
 
 .limpar {
-    background-color: #FF8356;
-    border: 1px solid #E27148;
+    background-color: var(--cor-botao-limpar);
+    border: 1px solid var(--cor-botao-limpar-borda);
 }

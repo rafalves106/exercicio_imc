@@ -1,7 +1,7 @@
 .container {
     max-width: 1000px;
     width: 100%;
-    background-color:#F4F4F4;
+    background-color:var(--cor-de-fundo);
     padding: 30px;
     border-radius: 15px;
     margin: 80px auto 40px;
@@ -20,7 +20,7 @@
     align-items: center;
     gap: 5px;
     padding: 15px;
-    color: #DB9C94;
+    color: var(--cor-normal);
 }
 
 .highlight, .highlightCuidado, .highlightAlerta, .highlightGrave {
@@ -33,23 +33,23 @@
 }
 
 .highlight {
-    border: 1.5px solid #DB9C94;
-    color: #DB9C94;
+    border: 1.5px solid var(--cor-normal);
+    color: var(--cor-normal);
 }
 
 .highlightCuidado {
-    border: 1.5px solid #FF8356;
-    color: #FF8356;
+    border: 1.5px solid var(--cor-cuidado);
+    color: var(--cor-cuidado);
 }
 
 .highlightAlerta {
-    border: 1.5px solid #FF5429;
-    color: #FF5429;
+    border: 1.5px solid var(--cor-alerta);
+    color: var(--cor-alerta);
 }
 
 .highlightGrave {
-    border: 1.5px solid #BD0000;
-    color: #BD0000;
+    border: 1.5px solid var(--cor-grave);
+    color: var(--cor-grave);
 }
 
 .tabelaItem img {
@@ -78,18 +78,18 @@
 }
 
 .resultado {
-    color: #DB9C94;
+    color: var(--cor-normal);
 }
 
 .resultadoCuidado {
-    color: #FF8356;
+    color: var(--cor-cuidado);
 }
 
 .resultadoAlerta {
-    color: #FF5429;
+    color: var(--cor-alerta);
 }
 
 
 .resultadoGrave {
-    color: #BD0000;
+    color: var(--cor-grave);
 }
