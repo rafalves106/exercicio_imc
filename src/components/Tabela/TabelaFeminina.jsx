@@ -13,7 +13,7 @@ const Feminina = ({ imc }) => {
     const categoria = getCategoria();
 
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${styles['tabela-entrada']}`}>
         <ul className={styles.tabela}>
             <li>
                 <div className={`${styles.tabelaItem} ${categoria === 'magreza' ? styles.highlightCuidado : ''}`}>

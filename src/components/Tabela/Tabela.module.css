@@ -89,7 +89,22 @@
     color: var(--cor-alerta);
 }
 
-
 .resultadoGrave {
     color: var(--cor-grave);
+}
+
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tabela-entrada {
+    animation: slideIn 0.5s ease-out forwards;
 }

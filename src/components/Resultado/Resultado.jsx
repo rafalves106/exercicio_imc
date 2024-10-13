@@ -22,7 +22,7 @@ const Resultado = ({ imc }) => {
     }
 
     return (
-        <div className={styles.resultado}>
+        <div className={`${styles.resultado} ${styles['resultado-entrada']}`}>
             <h2 className={styles.titulo}>Sobre seu resultado:</h2>
             <p className={styles.descricao}>{descricao}<br /><br />{recomendacao}</p>
         </div>
