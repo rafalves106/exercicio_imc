@@ -1,5 +1,5 @@
-import styles from './Calculadora.module.css'
-import React, {useState} from 'react';
+import styles from './Calculadora.module.css';
+import React, { useState } from 'react';
 import Feminina from '../Tabela/TabelaFeminina';
 import Masculina from '../Tabela/TabelaMasculina';
 import Resultado from '../Resultado/Resultado';
@@ -32,15 +32,13 @@ const Calculadora = () => {
 
     const handleSexoChange = (e) => {
         setSexo(e.target.value);
-    }
+    };
 
     const calcularIMC = (e) => {
         e.preventDefault();
 
         const alturaNum = parseFloat(altura.replace(",", "."));
         const pesoNum = parseFloat(peso.replace(",", "."));
-
-        console.log("Peso:", pesoNum, "Altura:", alturaNum);
 
         if (alturaNum > 0 && pesoNum > 0) {
             const imc = pesoNum / (alturaNum * alturaNum);
@@ -59,7 +57,7 @@ const Calculadora = () => {
         setImc(null);
         setSexo('select');
         setErro("");
-    }
+    };
 
     const isFormValid = peso && altura && sexo !== 'select';
 
@@ -68,11 +66,11 @@ const Calculadora = () => {
             <form className={styles.calculadora}>
                 <div className={styles.calculadoraItem}>
                     <label htmlFor="altura">Altura: ( ex.: 1,74 )</label>
-                    <input value={altura} onChange={handleAlturaChange} id="altura" type="number" placeholder="Metros" max={MAX_ALTURA} step="0.01"/>
+                    <input value={altura} onChange={handleAlturaChange} id="altura" type="number" placeholder="Metros" max={MAX_ALTURA} step="0.01" />
                 </div>
                 <div className={styles.calculadoraItem}>
                     <label htmlFor="peso">Peso: ( ex.: 69,2 )</label>
-                    <input id="peso" type="number" value={peso} onChange={handlePesoChange} placeholder="Quilos" max={MAX_PESO} step="0.1"/>
+                    <input id="peso" type="number" value={peso} onChange={handlePesoChange} placeholder="Quilos" max={MAX_PESO} step="0.1" />
                 </div>
                 <div className={styles.calculadoraItem}>
                     <label htmlFor="sexo">Sexo:</label>
@@ -93,12 +91,12 @@ const Calculadora = () => {
             {imc && (
                 <div>
                     {sexo === 'feminino' ? <Feminina imc={parseFloat(imc)} /> : <Masculina imc={parseFloat(imc)} />}
-                </div>    
+                </div>
             )}
 
             {imc && <Resultado imc={parseFloat(imc)} />}
         </div>
-    )
-}
+    );
+};
 
 export default Calculadora;
